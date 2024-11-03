@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form action="" mathod="post">
+      <!-- <label for="first-name">Name:</label>
+      <input id="first-name" name="firstname" type="text" /> -->
+      <fieldset>
+        <legend>String inputs</legend>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Your name"
+            pattern="[A-Z][a-z]{1,19}"
+            autofocus
+            required
+          />
+        </label>
+        <label>
+          E-mail:
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          Password:
+          <input type="password" name="password" />
+        </label>
+
+        <label>
+          Url:
+          <input type="url" name="url" />
+        </label>
+
+        <label>
+          Tel:
+          <input type="tel" name="tel" autocomplete="" value="+380" />
+        </label>
+
+        <label>
+          Search:
+          <input type="search" name="search" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Number inputs</legend>
+        <label
+          >Quantity
+          <input type="number" name="quantity" min="1" max="5" step="2"
+        /></label>
+        <label
+          >Volume <input type="range" name="volume" min="1" max="5" step="2"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Data inputs</legend>
+        <label> Datetime:<input type="datetime-local" /></label>
+        <label> Time:<input type="time" /> </label>
+        <label> Month:<input type="month" /> </label>
+        <label> Week:<input type="week" /> </label>
+      </fieldset>
+      <input type="file" />
+      <input type="color" />
+
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
 </html>
