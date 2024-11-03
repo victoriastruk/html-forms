@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+.valid {
+  background-color: aquamarine;
+}
+
+.invalid {
+  background-color: lightcoral;
+}
